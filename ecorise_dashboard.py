@@ -350,25 +350,25 @@ dashboard = html.Div([
     dbc.Row([
         dbc.Col([
             dcc.Graph(id = 'map')
-        ],md=6),
+        ],md=6), 
         dbc.Col([
             dcc.Graph(id = 'treemap')
-        ],md=6),
+        ],md=6),   
     ],
     ),
-    dbc.Row([
+    dbc.Row([  
         dbc.Col([
-            dcc.Graph(id='chart_theme')
-        ],md=6),
-        dbc.Col([
+            dcc.Graph(id='chart_sector'),
             dcc.Dropdown(
                 id = 'dd-pie',
                 options = [{'label': c, 'value': c}
                             for c in sorted(['Sector','Service_Area'])],
                 value='Sector'
                 ),
-            dcc.Graph(id='chart_sector')
-        ],md=6),
+        ],md=6),     
+        dbc.Col([
+            dcc.Graph(id='chart_theme'),
+        ],md=6),        
     ])
 
 ])
