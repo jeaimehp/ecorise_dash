@@ -486,7 +486,9 @@ def dd_values(pie,*vals):
     sb = pg_count.dropna(subset=path)
     sb['Education_Service_Center'] = 'ESC: ' + sb['Education_Service_Center'].astype('int').astype('str')
 
-    tree_fig = px.sunburst(sb, path=path, values = 'Program_Count',maxdepth=2)
+    tree_fig = px.sunburst(sb, path=path, values = 'Program_Count',
+                           color_discrete_sequence=eco_color,
+                           maxdepth=2)
 
     # Test section
     test_msg = ''
