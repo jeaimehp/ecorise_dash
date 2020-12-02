@@ -399,7 +399,9 @@ external_stylesheets = [dbc.themes.LITERA]
 # app = JupyterDash(external_stylesheets=external_stylesheets)
 # for running an actual Dash App
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+application = app.server
 app.config.suppress_callback_exceptions = True
+
 app.layout = html.Div([sidebar, content])
 
 ## CALLBACKS
@@ -497,4 +499,4 @@ def dd_values(*vals):
 
 # RUN app
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8040)
+    app.run_server(host='0.0.0.0', port=8070)
