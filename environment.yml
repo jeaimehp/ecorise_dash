@@ -1,0 +1,10 @@
+name: ecorise
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pandas
+  - dash
+  - dash-bootstrap-components
+  - geopandas
+  - xlrd
