@@ -288,7 +288,7 @@ def make_bar(df,xaxis,yaxis,label, orientation='h', textposition='inside', marke
 
 def make_map(orgdata, choro_geojson, featureidkey, choro_df, choro_df_location, choro_df_value, zoom = 5):
     # Design point layer
-    scatter_fig_hover_template = '<b>%{hovertext}</b><br>Education Service Center: %{customdata[4]}<br><br>Region: %{customdata[0]}<br>Category: %{customdata[1]}<br>Sector: %{customdata[2]}<br>Service Area: %{customdata[3]}'
+    scatter_fig_hover_template = '<b>%{hovertext}</b><br>Education Service Center: %{customdata[4]}'
     scatter_fig = px.scatter_mapbox(orgdata, lat="LATITUDE", lon="LONGITUDE",
                              hover_name="Organization", hover_data=["Custom_Region", 'Stakeholder_Category', 'Sector', 'Service_Area','Education_Service_Center'])
     scatter_fig.update_traces(hovertemplate=scatter_fig_hover_template)
