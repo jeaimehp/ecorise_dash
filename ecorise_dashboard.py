@@ -361,6 +361,12 @@ dashboard = html.Div([
             dcc.Graph(id='chart_theme')
         ],md=6),
         dbc.Col([
+            dcc.Dropdown(
+                id = 'dd-pie',
+                options = [{'label': c, 'value': c}
+                            for c in sorted(['Sector','Service_Area'])],
+                value='Sector'
+                ),
             dcc.Graph(id='chart_sector')
         ],md=6),
     ])
@@ -413,10 +419,11 @@ app.layout = html.Div([sidebar, content])
          ,Output('map', 'figure'),Output('chart_theme', 'figure')
          ,Output('treemap', 'figure'),Output('chart_sector', 'figure')
     ],
+    [Input('dd-pie','value')]+
     [Input(f'dd-org-{dd}', "value") for dd in org_filter_list]+
     [Input(f'dd-pg-{dd}', "value") for dd in pg_filter_list ],
 )
-def dd_values(*vals):
+def dd_values(pie,*vals):
     # initial dataframes
     df_o = orgs
     df_p = programs
@@ -489,7 +496,7 @@ def dd_values(*vals):
             map_fig,
             make_bar(theme_count, 'Percent','Theme','Label'),
             tree_fig,
-            make_groupby_pie_chart(df_o,'Service_Area',showlegend=True)
+            make_groupby_pie_chart(df_o,pie,showlegend=True)
            )
 
 
