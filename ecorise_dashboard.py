@@ -453,6 +453,8 @@ app.config.suppress_callback_exceptions = True
 app.layout = html.Div([sidebar, content])
 
 ## CALLBACKS
+# Update the underlying data when filters are changed, and rebuild pie chart if selection changes
+# TO DO: mode data to local session store, and update pie chart using a data state reference
 @app.callback(
     [Output('out-all-types','children')
 #      ,Output('tab-dashboard','children')
