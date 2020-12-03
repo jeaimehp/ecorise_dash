@@ -315,7 +315,7 @@ def make_groupby_pie_chart(df,col, textinfo = None, groupby_column = 'Organizati
     return fig
 
 def make_bar(df,xaxis,yaxis,label, pg_count, orientation='h', textposition='auto', marker_color=eco_color_desc):
-    fig = px.bar(df, x=xaxis, y=df.index.values, orientation=orientation, text=label, title="Environmental Themes of the {} Programs".format(pg_count))
+    fig = px.bar(df, x=xaxis, y=df.index.values, orientation=orientation, text=label, title="Environmental Themes Associated with Programs ({})".format(pg_count))
     fig.update_traces(marker_color=marker_color, texttemplate='%{text}', textposition=textposition)
     fig.update_yaxes(visible=False, showticklabels=False)
     fig.update_xaxes(visible=False, showticklabels=False)
