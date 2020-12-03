@@ -34,6 +34,7 @@ geo = pd.read_excel(os.path.join(data_filepath,'data','Geodata.xlsx'))
 
 # Merge Organization data with geodata
 orgs = organizations.merge(geo, left_on='Organization', right_on='ORGANIZATION', how='left')
+# orgs = organizations
 
 # Education Service Center Geospatial data layer - use geojson simplified to 0.01 threshold on QGIS
 ## load education service ceters geojson
@@ -313,12 +314,12 @@ def make_groupby_pie_chart(df,col, textinfo = None, groupby_column = 'Organizati
     fig.update_layout(showlegend=showlegend,height=250,   margin=dict(l=20, r=20, t=0, b=0))
     return fig
 
-def make_bar(df,xaxis,yaxis,label, orientation='h', textposition='inside', marker_color=eco_color_desc):
-    fig = px.bar(df, x=xaxis, y=df.index.values, orientation=orientation, text=label, title="Environmental Themes of the Programs")
+def make_bar(df,xaxis,yaxis,label, pg_count, orientation='h', textposition='auto', marker_color=eco_color_desc):
+    fig = px.bar(df, x=xaxis, y=df.index.values, orientation=orientation, text=label, title="Environmental Themes of the {} Programs".format(pg_count))
     fig.update_traces(marker_color=marker_color, texttemplate='%{text}', textposition=textposition)
     fig.update_yaxes(visible=False, showticklabels=False)
     fig.update_xaxes(visible=False, showticklabels=False)
-    fig.update_layout(showlegend=False, margin=dict(l=20, r=20, t=25, b=0),
+    fig.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=0),
         height=300)
     fig.update_layout(uniformtext_minsize=12)
     fig.update_traces(
@@ -516,16 +517,16 @@ def dd_values(pie,*vals):
 
     # build map
     # Get Count of entities per esc
-    esc_count = pd.DataFrame(df_o['Education_Service_Center'].value_counts())
-    esc_count = esc_count.reset_index().rename(columns={"index": "ESC", "Education_Service_Center": "Organizations"})
-    map_fig = make_map(df_o, esc_geojson, 'properties.FID', esc_count, 'ESC', 'Organizations', zoom=4)
+    esc_count_df = pd.DataFrame(df_o['Education_Service_Center'].value_counts())
+    esc_count_df = esc_count_df.reset_index().rename(columns={"index": "ESC", "Education_Service_Center": "Organizations"})
+    map_fig = make_map(df_o, esc_geojson, 'properties.FID', esc_count_df, 'ESC', 'Organizations', zoom=4)
 
     # build treemap
-    pg_count = pd.DataFrame(df_p['orgID'].value_counts())
-    pg_count = pg_count.reset_index().rename(columns={"index": "orgID", "orgID": "Program_Count"})
-    pg_count = pg_count.merge(orgs[['Organization','orgID','Education_Service_Center','Sector','Service_Area']], how='inner', on='orgID')
+    pg_count_df = pd.DataFrame(df_p['orgID'].value_counts())
+    pg_count_df = pg_count_df.reset_index().rename(columns={"index": "orgID", "orgID": "Program_Count"})
+    pg_count_df = pg_count_df.merge(orgs[['Organization','orgID','Education_Service_Center','Sector','Service_Area']], how='inner', on='orgID')
     path=['Education_Service_Center','Sector','Organization']
-    sb = pg_count.dropna(subset=path)
+    sb = pg_count_df.dropna(subset=path)
     sb['Education_Service_Center'] = 'ESC: ' + sb['Education_Service_Center'].astype('int').astype('str')
 
     tree_fig = px.sunburst(sb, path=path, values = 'Program_Count',
@@ -538,7 +539,7 @@ def dd_values(pie,*vals):
     # return values
     return (test_msg, orgs_tab, orgs_msg, programs_tab, pg_msg,
             map_fig,
-            make_bar(theme_count, 'Percent','Theme','Label'),
+            make_bar(theme_count, 'Percent','Theme','Label', pg_count),
             tree_fig,
             make_groupby_pie_chart(df_o,pie,showlegend=True)
            )
