@@ -134,6 +134,19 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
+# the normal style of for the tabs. The color bar set to ecorise green
+TAB_STYLE = {
+    'borderTop': '4px solid #00A887',
+    
+}
+
+# the style of for the selected tabs. The font bolded and color bar ecorise orange
+TAB_SELECTED_STYLE = {
+    'borderTop': '4px solid #FF8F12',
+    'fontWeight': 'bold'
+}
+
+
 # LISTS (TODO: MAKE THIS A DYNAMIC PULL)
 Education_Service_Centers =['All Regions',
 'Region 1 – Edinburg',
@@ -390,9 +403,9 @@ content = html.Div([
     html.Div(id="out-all-types"),
     html.Div([
         dcc.Tabs([
-            dcc.Tab([dashboard],label='Dashboard', id='tab-dashboard'),
-            dcc.Tab(id='tab-orgs'),
-            dcc.Tab(id='tab-programs'),
+            dcc.Tab([dashboard],label='Dashboard', id='tab-dashboard', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
+            dcc.Tab(id='tab-orgs', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
+            dcc.Tab(id='tab-programs', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
         ])
     ])
 ],
