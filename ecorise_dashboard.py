@@ -266,9 +266,16 @@ def build_directory_table(table_id, df, display_cols):
                         'whiteSpace': 'normal'
                                },
                     style_header={
-                        'backgroundColor': 'white',
-                        'fontWeight': 'bold'
+                        'backgroundColor': 'rgb(230, 230, 230)',
+                        'fontWeight': 'bold',
+                        'font-size': '15px',
+                        'height': '60px'
                     },
+                    style_data_conditional=[
+                        {'if': {'row_index': 'odd'},
+                         'backgroundColor': 'rgb(248, 248, 248)'
+                         }
+                        ],
                     style_data={'padding-left':'15px'},
                     style_table={'minWidth': '100%', 'maxWidth': 'none !important','overflowX': 'auto'},
                     export_format="xlsx",
