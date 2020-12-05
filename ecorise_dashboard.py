@@ -157,6 +157,19 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
+# the normal style of for the tabs. The color bar set to ecorise green
+TAB_STYLE = {
+    'borderTop': '4px solid #00A887',
+    
+}
+
+# the style of for the selected tabs. The font bolded and color bar ecorise orange
+TAB_SELECTED_STYLE = {
+    'borderTop': '4px solid #FF8F12',
+    'fontWeight': 'bold'
+}
+
+
 # LISTS (TODO: MAKE THIS A DYNAMIC PULL)
 EDUCATION_SERVICE_CENTERS = [
     'All Regions',
@@ -276,14 +289,23 @@ def build_directory_table(table_id, df, display_cols):
                     style_as_list_view=True,
                     style_cell={'padding': '5px',
                         'maxWidth': '300px',
+                        'font-family': 'Arial, Helvetica, sans-serif',
                         'textAlign': 'left',
                         'height': 'auto',
                         'whiteSpace': 'normal'
                                },
                     style_header={
-                        'backgroundColor': 'white',
-                        'fontWeight': 'bold'
+                        'backgroundColor': 'rgb(230, 230, 230)',
+                        'font-family': 'Arial, Helvetica, sans-serif',
+                        'fontWeight': 'bold',
+                        'font-size': '15px',
+                        'height': '60px'
                     },
+                    style_data_conditional=[
+                        {'if': {'row_index': 'odd'},
+                         'backgroundColor': 'rgb(248, 248, 248)'
+                         }
+                        ],
                     style_data={'padding-left':'15px'},
                     style_table={'minWidth': '100%', 'maxWidth': 'none !important','overflowX': 'auto'},
                     export_format="xlsx",
@@ -410,7 +432,7 @@ dashboard = html.Div([
             dcc.Dropdown(
                 id = 'dd-pie',
                 options = [{'label': c, 'value': c}
-                            for c in sorted(['Sector','Service_Area'])],
+                            for c in sorted(['Sector','Service_Area','Title_I_School_Participants','Rural_Communities_Focus','Academic_Standards_Alignment','Title_I_Schools_&_Low_Socioeconomic_Background_Focus'])],
                 value='Sector'
                 ),
         ],md=6),     
@@ -438,9 +460,9 @@ content = html.Div([
     html.Div(id="out-all-types"),
     html.Div([
         dcc.Tabs([
-            dcc.Tab([dashboard],label='Dashboard', id='tab-dashboard'),
-            dcc.Tab(id='tab-orgs'),
-            dcc.Tab(id='tab-programs'),
+            dcc.Tab([dashboard],label='Dashboard', id='tab-dashboard', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
+            dcc.Tab(id='tab-orgs', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
+            dcc.Tab(id='tab-programs', style=TAB_STYLE, selected_style=TAB_SELECTED_STYLE),
         ])
     ])
 ],
@@ -556,12 +578,18 @@ def dd_values(input_piechart, *vals):
     # Test section
     test_msg = ''
 
+    # make df for pie chart
+    if input_piechart in list(df_o):
+        df_for_chart = df_o
+    else:   
+        df_for_chart = df_p
+
     # return values
     return (test_msg, orgs_tab, orgs_msg, programs_tab, pg_msg,
             map_fig,
             make_bar(theme_count, 'Percent','Theme','Label', pg_count),
             tree_fig,
-            make_groupby_pie_chart(df_o, input_piechart, showlegend=True)
+            make_groupby_pie_chart(df_for_chart, input_piechart, showlegend=True)
            )
 
 
