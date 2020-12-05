@@ -470,7 +470,6 @@ app.layout = html.Div([sidebar, content])
 def dd_values(pie,*vals):
     # initial dataframes
     df_o = orgs
-    df_p = programs
 
     #iterate through organization columns and filter data
     i = 0
