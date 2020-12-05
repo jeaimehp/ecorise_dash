@@ -552,4 +552,6 @@ def dd_values(pie,*vals):
 
 # RUN app
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8070)
+    import os
+    debug = os.environ.get("DEBUG", False)
+    app.run_server(host='0.0.0.0', port=8070, debug=debug)
