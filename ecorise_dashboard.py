@@ -261,12 +261,14 @@ def build_directory_table(table_id, df, display_cols):
                     style_as_list_view=True,
                     style_cell={'padding': '5px',
                         'maxWidth': '300px',
+                        'font-family': 'Arial, Helvetica, sans-serif',
                         'textAlign': 'left',
                         'height': 'auto',
                         'whiteSpace': 'normal'
                                },
                     style_header={
                         'backgroundColor': 'rgb(230, 230, 230)',
+                        'font-family': 'Arial, Helvetica, sans-serif',
                         'fontWeight': 'bold',
                         'font-size': '15px',
                         'height': '60px'
