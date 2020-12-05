@@ -24,8 +24,10 @@ from urllib.request import urlopen
 import json
 
 
-
+# ----------------------------------------------------------------------------
 # DATA LOADING AND CLEANING
+# ----------------------------------------------------------------------------
+
 ## Load data
 data_filepath = pathlib.Path(__file__).parent.absolute()
 programs = pd.read_csv(os.path.join(data_filepath,'data','Programs.csv'))
@@ -34,39 +36,51 @@ geo = pd.read_excel(os.path.join(data_filepath,'data','Geodata.xlsx'))
 
 # Merge Organization data with geodata
 orgs = organizations.merge(geo, left_on='Organization', right_on='ORGANIZATION', how='left')
-# orgs = organizations
 
 # Education Service Center Geospatial data layer - use geojson simplified to 0.01 threshold on QGIS
-## load education service ceters geojson
 esc_simple_geojson = os.path.join(data_filepath,'data','esc_simple.geojson')
-
 with open(esc_simple_geojson) as json_file:
     esc_geojson = json.load(json_file)
 
 # Load ESC Centroid data as point data (file generated using QGIS Centroid feature)
 centroids = pd.read_csv(os.path.join(data_filepath,'data','centroids.csv'))
 
-# df['unique_id'] = df.longstrings.map(hash)
 orgs['orgID'] = orgs.index + 1
 programs['programID'] = programs.index + 1
 
 # Add OrgID column to Programs, merging on Organization
-org_cols = ['Organization','orgID']
+org_cols = ['Organization', 'orgID']
 programs_org = orgs[org_cols]
 programs = programs.merge(programs_org, how='left', on='Organization')
 programs['orgID'] = programs['orgID'].astype('Int64')
+
 # load filter dictionary data
+controlled_terms_df = pd.read_csv(os.path.join(data_filepath, 'data', 'filter_dict.csv'))
 
-## Function to produce dataframe with: term, display_term
-def get_display_terms(filter_df, table, column):
-    filter_df = filter_df[filter_df['table_name'] == table]
-    filter_df = filter_df[filter_df['column_name'] == column]
-    filter_df = filter_df.loc[:, ['term','display_term']]
-    filter_df = filter_df.set_index('term')
-    return filter_df
 
-## Function to produce dataframe with: Environmental_Themes, Count, Percent
+def get_display_terms(controlled_terms_df, table, column):
+    """
+    Produce dataframe with: term, display_term
+
+    :param controlled_terms_df:
+    :param table:
+    :param column:
+    :return:
+    """
+    controlled_terms_df = controlled_terms_df[controlled_terms_df['table_name'] == table]
+    controlled_terms_df = controlled_terms_df[controlled_terms_df['column_name'] == column]
+    controlled_terms_df = controlled_terms_df.loc[:, ['term', 'display_term']]
+    controlled_terms_df = controlled_terms_df.set_index('term')
+    return controlled_terms_df
+
+
 def count_env_themes_for_programs(programs_df):
+    """
+    Produce dataframe with: Environmental_Themes, Count, Percent
+
+    :param programs_df:
+    :return:
+    """
     ## Get program names and environmental themes
     program_themes_df = programs_df.loc[:, ['Program','Environmental_Themes']]
     ## Split environmental themes from string into an array of strings on ", "
@@ -81,10 +95,17 @@ def count_env_themes_for_programs(programs_df):
     theme_count_df = theme_count_df.astype({'Percent': int})
     return theme_count_df
 
-## Function to produce dataframe with: Environmental_Themes, Count, Percent, display_term, Label
-def prepare_env_themes_for_graph(programs_df, filter_df):
+
+def prepare_env_themes_for_graph(programs_df, controlled_terms_df):
+    """
+    Produce dataframe with: Environmental_Themes, Count, Percent, display_term, Label
+
+    :param programs_df:
+    :param controlled_terms_df:
+    :return:
+    """
     env_themes_df = count_env_themes_for_programs(programs_df)
-    env_theme_terms = get_display_terms(filter_df, 'Programs', 'Environmental_Themes')
+    env_theme_terms = get_display_terms(controlled_terms_df, 'Programs', 'Environmental_Themes')
     ## Join environmental themes found in data with expected controlled terms and display terms
     env_themes_df = env_themes_df.join(env_theme_terms)
     ## Add column for label, using diplay term and percent value
@@ -96,15 +117,15 @@ def prepare_env_themes_for_graph(programs_df, filter_df):
 
 # Create dictionary of filter options {tablename:{columnname:{'display_name':display_name,'options'{data_column:display_name}}}}
 filter_dict = {}
-for t in d_filter['table_name'].unique():
-    t_df = d_filter[d_filter['table_name']==t][['column_name','display_name']].drop_duplicates()
-    t_df = t_df.set_index('column_name')
-    t_dict = t_df.to_dict('index')
-    filter_dict[t] = t_dict
-    for k in filter_dict[t].keys():
-        tk_df = d_filter[(d_filter['table_name']==t) & (d_filter['column_name']==k)][['term','display_term']].drop_duplicates()
-        tk_dict = tk_df.set_index('term').T.to_dict('records')
-        filter_dict[t][k]['options'] = tk_dict
+for org_or_prog in controlled_terms_df['table_name'].unique():
+    col_to_display_map_df = controlled_terms_df[controlled_terms_df['table_name'] == org_or_prog][['column_name', 'display_name']].drop_duplicates()
+    col_to_display_map_df = col_to_display_map_df.set_index('column_name')
+    col_to_display_map_dict = col_to_display_map_df.to_dict('index')
+    filter_dict[org_or_prog] = col_to_display_map_dict
+    for k in filter_dict[org_or_prog].keys():
+        term_to_display_map_df = controlled_terms_df[(controlled_terms_df['table_name'] == org_or_prog) & (controlled_terms_df['column_name'] == k)][['term', 'display_term']].drop_duplicates()
+        tk_dict = term_to_display_map_df.set_index('term').T.to_dict('records')
+        filter_dict[org_or_prog][k]['options'] = tk_dict
 
 # STYLING
 # Set Color scales for Figures using the EcoRise brande color palette
@@ -137,80 +158,84 @@ CONTENT_STYLE = {
 }
 
 # LISTS (TODO: MAKE THIS A DYNAMIC PULL)
-Education_Service_Centers =['All Regions',
-'Region 1 – Edinburg',
-'Region 2 – Corpus Christi',
-'Region 3 – Victoria',
-'Region 4 – Houston',
-'Region 5 – Beaumont',
-'Region 6 – Huntsville',
-'Region 7 – Kilgore',
-'Region 8 – Mount Pleasant',
-'Region 9 – Wichita Falls',
-'Region 10 – Richardson',
-'Region 11 – Fort Worth',
-'Region 12 – Waco',
-'Region 13 – Austin',
-'Region 14 – Abilene',
-'Region 15 – San Angelo',
-'Region 17 – Lubbock',
-'Region 18 – Midland',
-'Region 19 – El Paso',
-'Region 20 – San Antonio']
+EDUCATION_SERVICE_CENTERS = [
+    'All Regions',
+    'Region 1 – Edinburg',
+    'Region 2 – Corpus Christi',
+    'Region 3 – Victoria',
+    'Region 4 – Houston',
+    'Region 5 – Beaumont',
+    'Region 6 – Huntsville',
+    'Region 7 – Kilgore',
+    'Region 8 – Mount Pleasant',
+    'Region 9 – Wichita Falls',
+    'Region 10 – Richardson',
+    'Region 11 – Fort Worth',
+    'Region 12 – Waco',
+    'Region 13 – Austin',
+    'Region 14 – Abilene',
+    'Region 15 – San Angelo',
+    'Region 17 – Lubbock',
+    'Region 18 – Midland',
+    'Region 19 – El Paso',
+    'Region 20 – San Antonio',
+]
 
-directory_org_cols = [
-'Organization',
-'City',
-'Education_Service_Center',
-'Full-Time_Staff',
-'General_Email',
-'Mission',
-'Part-Time_Staff',
-'Phone',
-'Primary_Email',
-'Primary_First_Name',
-'Primary_Last_Name',
-'Primary_Role',
-'Custom_Region',
-'Sector',
-'Service_Area',
-'Stakeholder_Category',
-'State',
-'Street_Address',
-'Other_Staff/Contractors',
-'Work_Terms',
-'Website',
-'ZIP_Code']
+DIRECTORY_ORG_COLS = [
+    'Organization',
+    'City',
+    'Education_Service_Center',
+    'Full-Time_Staff',
+    'General_Email',
+    'Mission',
+    'Part-Time_Staff',
+    'Phone',
+    'Primary_Email',
+    'Primary_First_Name',
+    'Primary_Last_Name',
+    'Primary_Role',
+    'Custom_Region',
+    'Sector',
+    'Service_Area',
+    'Stakeholder_Category',
+    'State',
+    'Street_Address',
+    'Other_Staff/Contractors',
+    'Work_Terms',
+    'Website',
+    'ZIP_Code',
+]
 
-directory_program_cols =[
-'Program',
-'Organization',
-'Title_I_School_Participants',
-'Status',
-'COVID-19_Adaptations',
-'Description',
-'Environmental_Themes',
-'Regions_Served',
-'Impact_Evaluation',
-'Groups_Served',
-'Program_Locations',
-'Other_Languages',
-'Services_&_Resources',
-'Rural_Communities_Focus',
-'Engaging_Rural_Communities',
-'Schools_Served',
-'Academic_Standards_Alignment',
-'Student_Engagement_Frequency',
-'Students_Served',
-'Teacher/Administrator_Engagement_Frequency',
-'Teachers/Administrators_Served',
-'Program_Times',
-'Title_I_Schools_&_Low_Socioeconomic_Background_Focus',
-'Participants_Served',
-'Academic_Standards']
+DIRECTORY_PROGRAM_COLS = [
+    'Program',
+    'Organization',
+    'Title_I_School_Participants',
+    'Status',
+    'COVID-19_Adaptations',
+    'Description',
+    'Environmental_Themes',
+    'Regions_Served',
+    'Impact_Evaluation',
+    'Groups_Served',
+    'Program_Locations',
+    'Other_Languages',
+    'Services_&_Resources',
+    'Rural_Communities_Focus',
+    'Engaging_Rural_Communities',
+    'Schools_Served',
+    'Academic_Standards_Alignment',
+    'Student_Engagement_Frequency',
+    'Students_Served',
+    'Teacher/Administrator_Engagement_Frequency',
+    'Teachers/Administrators_Served',
+    'Program_Times',
+    'Title_I_Schools_&_Low_Socioeconomic_Background_Focus',
+    'Participants_Served',
+    'Academic_Standards',
+]
 
 # APP Functions
-def make_dropdown(i, options, placeholder, multi = True):
+def make_dropdown(i, options, placeholder, multi=True):
     ''' Create a dropdown taking id, option and placeholder values as inputs. '''
 
     # Handle either list or options as inputs
@@ -228,6 +253,7 @@ def make_dropdown(i, options, placeholder, multi = True):
                 multi=multi,
                 placeholder=placeholder,
                 )
+
 
 def build_directory_table(table_id, df, display_cols):
     ''' Function to create the structure and style elements of both the Organization and Programs tables'''
@@ -319,16 +345,32 @@ def make_map(orgdata, choro_geojson, featureidkey, choro_df, choro_df_location, 
 
     return fig
 
+
+def filter_organizations(org_df, selected_terms):
+    """
+
+    :param org_df:
+        DataFrame
+    :param selected_terms:
+        List of list of strings
+    :return:
+        DataFrame
+    """
+
 # COMPONENTS
 # Get dictionaries to use for Org and Program filter lists
 # Organizations
-org_filter_list = ['Custom_Region', 'Education_Service_Center', 'Sector', 'Service_Area']
-org_filter_dict = {k: filter_dict['Organizations'].get(k, None) for k in (org_filter_list)}
+# Limit the Organizations filters to these columns names, *even if* there might be more than
+# specified here in the original data.
+ORG_FILTER_LIST = ['Custom_Region', 'Education_Service_Center', 'Sector', 'Service_Area']
+org_filter_dict = {k: filter_dict['Organizations'].get(k, None) for k in (ORG_FILTER_LIST)}
 
 # Programs
-pg_filter_list = ['Regions_Served','Environmental_Themes','Services_&_Resources','Academic_Standards_Alignment',
+# Limit the Programs filters to these columns names, *even if* there might be more than
+# specified here in the original data.
+PROG_FILTER_LIST = ['Regions_Served', 'Environmental_Themes', 'Services_&_Resources', 'Academic_Standards_Alignment',
                  'Program_Locations','Program_Times','Rural_Communities_Focus','Groups_Served','Title_I_School_Participants']
-pg_filter_dict = {k: filter_dict['Programs'].get(k, None) for k in (pg_filter_list)}
+pg_filter_dict = {k: filter_dict['Programs'].get(k, None) for k in (PROG_FILTER_LIST)}
 
 # Build components
 
@@ -337,15 +379,19 @@ overview_msg = html.Div([
 ])
 
 dds_orgs =  html.Div(
-        [make_dropdown(f'dd-org-{k}', org_filter_dict[k]['options'][0],
-                       org_filter_dict[k]['display_name'])  for k in org_filter_dict
-         ]
+    [make_dropdown(
+        f'dd-org-{k}',
+        org_filter_dict[k]['options'][0],
+        org_filter_dict[k]['display_name']) for k in org_filter_dict
+    ]
 )
 
 dds_programs =  html.Div(
-        [make_dropdown(f'dd-pg-{k}', pg_filter_dict[k]['options'][0],pg_filter_dict[k]['display_name'])
-         for k in pg_filter_dict
-         ]
+    [make_dropdown(
+        f'dd-pg-{k}',
+        pg_filter_dict[k]['options'][0],
+        pg_filter_dict[k]['display_name']) for k in pg_filter_dict
+     ]
 )
 
 dashboard = html.Div([
@@ -417,39 +463,52 @@ app.layout = html.Div([sidebar, content])
 # TO DO: mode data to local session store, and update pie chart using a data state reference
 @app.callback(
     [Output('out-all-types','children')
-#      ,Output('tab-dashboard','children')
          ,Output('tab-orgs','children'),Output('tab-orgs','label')
          ,Output('tab-programs','children') ,Output('tab-programs','label')
          ,Output('map', 'figure'),Output('chart_theme', 'figure')
          ,Output('treemap', 'figure'),Output('chart_sector', 'figure')
     ],
-    [Input('dd-pie','value')]+
-    [Input(f'dd-org-{dd}', "value") for dd in org_filter_list]+
-    [Input(f'dd-pg-{dd}', "value") for dd in pg_filter_list ],
+    [Input('dd-pie', 'value')]+
+    [Input(f'dd-org-{dd}', "value") for dd in ORG_FILTER_LIST]+
+    [Input(f'dd-pg-{dd}', "value") for dd in PROG_FILTER_LIST],
 )
-def dd_values(pie,*vals):
+def dd_values(input_piechart, *vals):
+    # Split org and prog selected values
+    input_org_values = vals[:len(ORG_FILTER_LIST)]
+    input_prog_values = vals[len(ORG_FILTER_LIST):]
+
+    # Build mapping from col_name -> list of selected values
+    input_org_col_to_selected = {
+        col_name: selected_terms
+        for col_name, selected_terms
+        in zip(ORG_FILTER_LIST, input_org_values)
+    }
+    input_prog_col_to_selected = {
+        col_name: selected_terms
+        for col_name, selected_terms
+        in zip(PROG_FILTER_LIST, input_prog_values)
+    }
+
     # initial dataframes
     df_o = orgs
 
-    #iterate through organization columns and filter data
-    i = 0
-    for v in vals[0:len(org_filter_list)]:
-        if(v):
-            df_o = df_o[df_o[org_filter_list[i]].isin(v)]
-        i += 1
+    # Keep only organizations that fit the filter values chosen in the dashboard
+    for col_name, selected_terms in input_org_col_to_selected.items():
+        if selected_terms:
+            is_selected = df_o[col_name].isin(selected_terms)
+            df_o = df_o.loc[is_selected]
 
-    # select only programs in the org list, then filter on program filters
+    # select only programs in the filtered org list, then filter on program filters
     df_p = programs[programs['orgID'].isin(df_o['orgID'])]
-    p = i - len(org_filter_list)
-    p_count = 0
+    # TODO: Make sure this is exploded.
     p_msg = 'programs: '
-    for v in vals[len(org_filter_list):]:
-        if(v):
-            for i in v:
-                p_msg = p_msg + i
-            df_p = df_p[df_p[pg_filter_list[p]].isin(v)]
-            p_count += 1
-        p += 1
+    for col_name, selected_terms in input_prog_col_to_selected.items():
+        if selected_terms:
+            df_p = df_p.loc[df_p[col_name].isin(selected_terms)]
+
+    # Count the number of non-null Program filters
+    p_count = len([selected_terms for selected_terms
+                   in input_prog_col_to_selected.values() if selected_terms])
 
     # if any program filter is selected, filter orgs to this
     if p_count > 0:
@@ -459,22 +518,22 @@ def dd_values(pie,*vals):
     org_count = len(df_o)
     pg_count = len(df_p)
     orgs_msg = 'Organization Records (' + str(org_count) + ')'
-    pg_msg  = 'Program Records (' + str(pg_count) + ')'
+    pg_msg = 'Program Records (' + str(pg_count) + ')'
 
     # Build Directory tables
     orgs_tab = html.Div([
-        build_directory_table('table-orgs', df_o, directory_org_cols)
+        build_directory_table('table-orgs', df_o, DIRECTORY_ORG_COLS)
         ],style={'width':'100%'})
 
     programs_tab = html.Div([
-          build_directory_table('table-programs', df_p, directory_program_cols)
+          build_directory_table('table-programs', df_p, DIRECTORY_PROGRAM_COLS)
         ],style={'width':'100%'})
 
     # Build Figures
     # Calculate theme split
     # theme_count = count_env_themes(df_p, full_list)
     # theme_count['Label'] = theme_count['Environmental_Theme'] + ' - ' + theme_count['Percent'].astype(str) + '%'
-    theme_count = prepare_env_themes_for_graph(df_p, d_filter)
+    theme_count = prepare_env_themes_for_graph(df_p, controlled_terms_df)
 
     # build map
     # Get Count of entities per esc
@@ -502,7 +561,7 @@ def dd_values(pie,*vals):
             map_fig,
             make_bar(theme_count, 'Percent','Theme','Label', pg_count),
             tree_fig,
-            make_groupby_pie_chart(df_o,pie,showlegend=True)
+            make_groupby_pie_chart(df_o, input_piechart, showlegend=True)
            )
 
 
