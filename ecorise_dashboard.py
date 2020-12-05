@@ -362,7 +362,7 @@ dashboard = html.Div([
             dcc.Dropdown(
                 id = 'dd-pie',
                 options = [{'label': c, 'value': c}
-                            for c in sorted(['Sector','Service_Area'])],
+                            for c in sorted(['Sector','Service_Area','Title_I_School_Participants','Rural_Communities_Focus','Academic_Standards','Title_I_Schools_&_Low_Socioeconomic_Background_Focus'])],
                 value='Sector'
                 ),
         ],md=6),     
@@ -495,12 +495,18 @@ def dd_values(pie,*vals):
     # Test section
     test_msg = ''
 
+    # make df for pie chart
+    if pie in list(df_o):
+        df_for_chart = df_o
+    else:
+        df_for_chart = df_p
+
     # return values
     return (test_msg, orgs_tab, orgs_msg, programs_tab, pg_msg,
             map_fig,
             make_bar(theme_count, 'Percent','Theme','Label'),
             tree_fig,
-            make_groupby_pie_chart(df_o,pie,showlegend=True)
+            make_groupby_pie_chart(df_for_chart,pie,showlegend=True)
            )
 
 
