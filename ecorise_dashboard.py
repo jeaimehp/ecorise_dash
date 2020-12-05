@@ -56,43 +56,6 @@ programs_org = orgs[org_cols]
 programs = programs.merge(programs_org, how='left', on='Organization')
 programs['orgID'] = programs['orgID'].astype('Int64')
 # load filter dictionary data
-d_filter = pd.read_csv(os.path.join(data_filepath,'data','filter_dict.csv'))
-
-# Roll up Environmental theme data
-# List of standardized themes from dataset
-# **Added to standardized list from spreadsheet: Conservation (Wildlife/Habitat), Green Building,  Outdoor Learning
-# themes_list = ['Outdoor learning',
-# 'Waste',
-# 'Water',
-# 'Energy',
-# 'Green building',
-# 'Food Systems/Nutrition',
-# 'Transportation',
-# 'Air Quality',
-# 'Conservation (wildlife/habitat)',
-# 'Workforce Development',
-# 'STEM']
-# add_themes = ['Conservation (Wildlife/Habitat)', 'Green Building',  'Outdoor Learning']
-# full_list = themes_list + add_themes
-#
-# def count_env_themes(programs, theme_list):
-#     themes = programs[['Program','Environmental_Themes']]
-#     expanded = themes['Environmental_Themes'].str.get_dummies(', ')
-#     # Replace columns that aren't in list with 'Other'
-#     expanded = expanded.rename(lambda x:  x if x in theme_list else 'Other', axis=1)
-#     # Group 'Other' Columns together
-#     expanded = expanded.groupby(expanded.columns, axis=1).sum()
-#     # Merge the themes and expanded dataframes
-#     themes = pd.concat([themes, expanded], axis=1)
-#
-#     # Get Count of Programs per theme
-#     theme_count = pd.DataFrame(expanded.sum())
-#     theme_count.reset_index(inplace=True)
-#     theme_count.columns = ['Theme','Count']
-#     theme_count['Percent'] = round(100 * theme_count['Count'] / len(programs),0)
-#     theme_count = theme_count.astype({'Percent': int})
-#     theme_count = theme_count.sort_values(by=['Count'])
-#     return theme_count
 
 ## Function to produce dataframe with: term, display_term
 def get_display_terms(filter_df, table, column):
@@ -110,14 +73,12 @@ def count_env_themes_for_programs(programs_df):
     program_themes_df['Environmental_Themes'] = program_themes_df['Environmental_Themes'].str.split(', ')
     ## Explode dataframe by environmental theme to get each theme from within an array into a row
     program_themes_df = program_themes_df.explode('Environmental_Themes')
-#     theme_list = program_themes_df['Environmental_Themes'].unique()
     ## Group by environmental theme counting the number of programs with each theme
     theme_count_df = program_themes_df.groupby(['Environmental_Themes']).count()
     ## Add column for percent of programs with the theme based on the number of program records
     theme_count_df['Percent'] = round(100 * theme_count_df['Program'] / len(programs_df))
     theme_count_df = theme_count_df.rename(columns={'Program': 'Count'})
     theme_count_df = theme_count_df.astype({'Percent': int})
-#     print(theme_count_df)
     return theme_count_df
 
 ## Function to produce dataframe with: Environmental_Themes, Count, Percent, display_term, Label
@@ -130,7 +91,6 @@ def prepare_env_themes_for_graph(programs_df, filter_df):
     env_themes_df['Label'] = env_themes_df['display_term'] + ' ' + env_themes_df['Percent'].astype(str) + '%'
     ## Remove themes found within data that don't conform to recognized controlled terms (too bad, so sad)
     env_themes_df = env_themes_df[env_themes_df['Label'].notna()]
-#     env_themes_df = env_themes_df[env_themes_df['Percent'] > 1]
     env_themes_df = env_themes_df.sort_values(by=['Count'])
     return env_themes_df
 
