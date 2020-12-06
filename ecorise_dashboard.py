@@ -608,4 +608,4 @@ def dd_values(input_piechart, *vals):
 if __name__ == '__main__':
     import os
     debug = os.environ.get("DEBUG", False)
-    app.run_server(host='0.0.0.0', port=8070, debug=debug)
+    app.run_server(host='0.0.0.0', port=8040, debug=debug)
