@@ -180,29 +180,6 @@ TAB_SELECTED_STYLE = {
 
 
 # LISTS (TODO: MAKE THIS A DYNAMIC PULL)
-EDUCATION_SERVICE_CENTERS = [
-    'All Regions',
-    'Region 1 – Edinburg',
-    'Region 2 – Corpus Christi',
-    'Region 3 – Victoria',
-    'Region 4 – Houston',
-    'Region 5 – Beaumont',
-    'Region 6 – Huntsville',
-    'Region 7 – Kilgore',
-    'Region 8 – Mount Pleasant',
-    'Region 9 – Wichita Falls',
-    'Region 10 – Richardson',
-    'Region 11 – Fort Worth',
-    'Region 12 – Waco',
-    'Region 13 – Austin',
-    'Region 14 – Abilene',
-    'Region 15 – San Angelo',
-    'Region 17 – Lubbock',
-    'Region 18 – Midland',
-    'Region 19 – El Paso',
-    'Region 20 – San Antonio',
-]
-
 DIRECTORY_ORG_COLS = [
     'Organization',
     'City',
@@ -263,10 +240,10 @@ def make_dropdown(i, options, placeholder, multi=True):
     # Handle either list or options as inputs
     if isinstance(options, dict):
         opts = [{'label': options[k], 'value': k}
-                            for k in sorted(options)]
+                            for k in options]
     else:
         opts = [{'label': c, 'value': c}
-                            for c in sorted(options)]
+                            for c in options]
 
     # Return actual dropdown component
     return dcc.Dropdown(
