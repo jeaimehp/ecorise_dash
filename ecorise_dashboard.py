@@ -253,7 +253,9 @@ def make_dropdown(i, options, placeholder, multi=True):
                 placeholder=placeholder,
                 )
 
-
+# Todo: Figure out which dataframe this function pulls data from when called
+# since we split multi-value strings into arrays in the data we process for filters the data will look weird if
+# we don't go back and get the original values for this display.
 def build_directory_table(table_id, df, display_cols):
     ''' Function to create the structure and style elements of both the Organization and Programs tables'''
     # Checks to add:
@@ -301,6 +303,7 @@ def build_directory_table(table_id, df, display_cols):
 
 # figure Functions
 def make_groupby_pie_chart(df,col, textinfo = None, groupby_column = 'Organization', color_scale = eco_color,showlegend=False ):
+    # Get display names for column
     df = pd.DataFrame(df.groupby(col)[groupby_column].count())
     df.reset_index(level=0, inplace=True)
     fig = px.pie(df, values=groupby_column, names=col, color_discrete_sequence=color_scale)
@@ -415,6 +418,8 @@ dashboard = html.Div([
     dbc.Row([  
         dbc.Col([
             dcc.Graph(id='chart_sector'),
+            # Todo: Make this behave much more like the filter drop downs using `make_dropdown` to get the diplay terms.
+            # should also put the long list of column names in an ALL CAPS constant like "PROG_FILTER_LIST"
             dcc.Dropdown(
                 id = 'dd-pie',
                 options = [{'label': c, 'value': c}
@@ -542,6 +547,9 @@ def dd_values(input_piechart, *vals):
     pg_msg = 'Program Records (' + str(pg_count) + ')'
 
     # Build Directory tables
+    # Todo: Figure out which dataframe this function pulls data from when called
+    # since we split multi-value strings into arrays in the data we process for filters (df_o and (df_p)
+    # the data will look weird if we don't go back and get the original values for this directory display.
     orgs_tab = html.Div([
         build_directory_table('table-orgs', df_o, DIRECTORY_ORG_COLS)
         ],style={'width':'100%'})
@@ -577,7 +585,7 @@ def dd_values(input_piechart, *vals):
     # Test section
     test_msg = ''
 
-    # make df for pie chart
+    # Choose df for pie chart
     if input_piechart in list(df_o):
         df_for_chart = df_o
     else:   
