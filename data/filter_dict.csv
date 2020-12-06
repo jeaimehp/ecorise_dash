@@ -1,167 +1,167 @@
-table_name,column_name,display_name,name_description,term,display_term,term_description,note
-Organizations,Custom_Region,Region,,DFW/North TX,North Texas,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,Houston,Houston,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,El Paso,El Paso,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,San Antonio,San Antonio,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,Austin/Central TX,Central TX,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,RGV,Rio Grande Valley,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,Coastal Bend & Laredo,Coastal Bend & Laredo,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,Great Plains,Great Plains,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,Statewide & Other,Statewide & Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Custom_Region,Region,,National,National,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1688944859
-Organizations,Education_Service_Center,ESC Headquarters,,1,Region 1 – Edinburg,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,2,Region 2 – Corpus Christi,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,3,Region 3 – Victoria,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,4,Region 4 – Houston,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,5,Region 5 – Beaumont,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,6,Region 6 – Huntsville,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,7,Region 7 – Kilgore,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,8,Region 8 – Mount Pleasant,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,9,Region 9 – Wichita Falls,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,10,Region 10 – Richardson,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,11,Region 11 – Fort Worth,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,12,Region 12 – Waco,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,13,Region 13 – Austin,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,14,Region 14 – Abilene,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,15,Region 15 – San Angelo,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,16,Region 16 - Amarillo,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,17,Region 17 – Lubbock,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,18,Region 18 – Midland,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,19,Region 19 – El Paso,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Education_Service_Center,ESC Headquarters,,20,Region 20 – San Antonio,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Organizations,Sector,Sector,,Business,Business,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Sector,Sector,,"Government (City, County, State, Federal, Etc.)",Government,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Sector,Sector,,Higher Education Institution,Higher Education Institution,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Sector,Sector,,K-12 School/District,K-12 School/District,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Sector,Sector,,Non-profit,Non-profit,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Sector,Sector,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=64867802
-Organizations,Service_Area,Service Area,,Local (City/Town),Local,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1454040033
-Organizations,Service_Area,Service Area,,Regional/Multi-county,Regional,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1454040033
-Organizations,Service_Area,Service Area,,State,State,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1454040033
-Organizations,Service_Area,Service Area,,National,National,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1454040033
-Organizations,Service_Area,Service Area,,International,International,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1454040033
-Organizations,Stakeholder_Category,Stakeholder Type,,Business,Business,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Consultant,Consultant,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Foundation,Foundation,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Government,Government,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Higher Education,Higher Education,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Network/Association,Association,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,School District/Campus,School District,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Stakeholder_Category,Stakeholder Type,,Service Provider,Service Provider,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1150223597
-Organizations,Volunteers,Volunteers,,Yes,Yes,,
-Organizations,Volunteers,Volunteers,,No,No,,
-Organizations,Work_Terms,Terms Used to Describe Work,,Children in Nature,Children in Nature,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Climate Education,Climate Education,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Conservation,Conservation,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Education for Sustainability,Education for Sustainability,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Environmental Education,Environmental Education,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Environmental Justice,Environmental Justice,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Environmental Literacy,Environmental Literacy,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Green Schools,Green Schools,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Health & Wellness,Health & Wellness,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Outdoor Education,Outdoor Education,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Social Justice,Social Justice,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,STEM Education,STEM Education,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Youth Development,Youth Development,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Organizations,Work_Terms,Terms Used to Describe Work,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1093388516
-Programs,Academic_Standards_Alignment,Standards Aligned,,Never asked question,Not Asked,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1701892127
-Programs,Academic_Standards_Alignment,Standards Aligned,,No (skip the next question),No,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1701892127
-Programs,Academic_Standards_Alignment,Standards Aligned,,Yes (please list them below),Yes,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1701892127
-Programs,Environmental_Themes,Environmental Themes,,Air Quality,Air Quality,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Conservation (Wildlife/Habitat),Conservation,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Energy,Energy,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Food Systems/Nutrition,Food Systems,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Green Building,Green Building,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Outdoor Learning,Outdoor Learning,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,STEM,STEM,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Transportation,Transportation,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Waste,Waste,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Water,Water,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Workforce Development,Workforce Development,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Environmental_Themes,Environmental Themes,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1287939192
-Programs,Groups_Served,Groups Served,,Community/Family,Community,The community and/or families.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1330952415
-Programs,Groups_Served,Groups Served,,Elementary School <K-5>,Elementary School,Students from kindergarden to 5th grade.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1330952415
-Programs,Groups_Served,Groups Served,,High School <9-12>,High School,Students from 9th to 12th grade.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1330952415
-Programs,Groups_Served,Groups Served,,Middle School <6-8>,Middle School,Students from 6th to 8th grade.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1330952415
-Programs,Groups_Served,Groups Served,,Teachers/Administrators,Teachers,School teachers and/or administrators.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1330952415
-Programs,Impact_Evaluation,Evaluation,,Do Not Evaluate,No Evaluation,The program is not evaluated.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,External Evaluation Partner,External Evaluation,The program has an external evaluation partner.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,Post-Program Survey Only,Post-Program Survey,The program uses a post-program survey only. ,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,Pre/Post-Program Survey,Pre and Post-Program Survey,The program uses pre and post-program surveys.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,"Qualitative/Informal (Focus Groups, Interviews, Testimonies)",Qualitative Evaluation,"The program uses qualitative or informal evaluation such as focus groups, interviews, and testimonies.",https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,Rubrics for Student Projects/Presentations,Project Rubrics,The program uses evaluation rubrics for student projects.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,Never asked question,Not Asked,This question was not asked about the program.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Impact_Evaluation,Evaluation,,Other,Other,The program uses a different evaluation method.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1214058502
-Programs,Program_Locations,Location,,On School Campus,On School Campus,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=22526433
-Programs,Program_Locations,Location,,Off campus,Off campus,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=22526433
-Programs,Program_Locations,Location,,Virtual,Virtual,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=22526433
-Programs,Program_Locations,Location,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=22526433
-Programs,Program_Times,Time,,After School &/or Evenings,After School,Occuring after school or weekday evenings.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=754598730
-Programs,Program_Times,Time,,During School Day,During School,Occuring during the school day.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=754598730
-Programs,Program_Times,Time,,Summer,Summer,Occuring during the summer break.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=754598730
-Programs,Program_Times,Time,,Weekends,Weekends,Occuring on weekends.,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=754598730
-Programs,Regions_Served,ESC Region Availability,,All Regions,All Regions,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 1 – Edinburg,Region 1 – Edinburg,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 2 – Corpus Christi,Region 2 – Corpus Christi,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 3 – Victoria,Region 3 – Victoria,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 4 – Houston,Region 4 – Houston,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 5 – Beaumont,Region 5 – Beaumont,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 6 – Huntsville,Region 6 – Huntsville,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 7 – Kilgore,Region 7 – Kilgore,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 8 – Mount Pleasant,Region 8 – Mount Pleasant,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 9 – Wichita Falls,Region 9 – Wichita Falls,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 10 – Richardson,Region 10 – Richardson,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 11 – Fort Worth,Region 11 – Fort Worth,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 12 – Waco,Region 12 – Waco,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 13 – Austin,Region 13 – Austin,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 14 – Abilene,Region 14 – Abilene,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 15 – San Angelo,Region 15 – San Angelo,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 16 - Amarillo,Region 16 - Amarillo,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 17 – Lubbock,Region 17 – Lubbock,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 18 – Midland,Region 18 – Midland,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 19 – El Paso,Region 19 – El Paso,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Regions_Served,ESC Region Availability,,Region 20 – San Antonio,Region 20 – San Antonio,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=68116983
-Programs,Rural_Communities_Focus,Rural Focus,,Yes,Yes,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1180549922
-Programs,Rural_Communities_Focus,Rural Focus,,No,No,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1180549922
-Programs,Rural_Communities_Focus,Rural Focus,,"No, but it is available to rural communities",Available,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1180549922
-Programs,Services_&_Resources,Offerings,,Classroom Volunteers/Presenters,Classroom Presenters,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Curriculum & Instructional Materials,Instructional Materials,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Directly Teaching Students,Direct Teaching,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Field Trips,Field Trips,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Grant Funding,Grant Funding,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Internships,Internships,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Professional Development for Teachers,Teachers Professional Development,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Professional Development or Consulting for Administrators,Administrator Professional Development,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Supporting Networks (online/in-person),Supporting Networks,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Services_&_Resources,Offerings,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1009976158
-Programs,Student_Engagement_Frequency,Student Engagement,,Daily,Daily,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Multiple times a month,Multiple times a month,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Multiple times a week,Multiple times a week,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Not applicable,Not applicable,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Once a month,Once a month,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Once a week,Once a week,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Once a year,Once a year,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Quarterly,Quarterly,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Twice a year,Twice a year,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Varies,Varies,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Student_Engagement_Frequency,Student Engagement,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Daily,Daily,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Multiple times a month,Multiple times a month,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Multiple times a week,Multiple times a week,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Not applicable,Not applicable,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Once a month,Once a month,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Once a week,Once a week,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Once a year,Once a year,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Quarterly,Quarterly,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Twice a year,Twice a year,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Varies,Varies,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,,Other,Other,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1750706711
-Programs,Title_I_School_Participants,% Title 1,,0-25%,0-25%,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1217095945
-Programs,Title_I_School_Participants,% Title 1,,26-50%,26-50%,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1217095945
-Programs,Title_I_School_Participants,% Title 1,,51-75%,51-75%,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1217095945
-Programs,Title_I_School_Participants,% Title 1,,76-100%,76-100%,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1217095945
-Programs,Title_I_School_Participants,% Title 1,,Do not track,Do not track,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=1217095945
-Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,,"Yes, this is our core beneficiary and strategic priority.",Yes,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=862782551
-Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,,"No, this is not a focus in our outreach or programming.",No,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=862782551
-Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,,"This is not our core focus, but we serve a diverse spectrum of schools &/or students.","No, but we serve these areas.",,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=862782551
-Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,,We do not track Title I and/or low socioeconomic status students.,We do not track service to these areas.,,https://docs.google.com/spreadsheets/d/1Fv75J9Of_tOA9aai9pHrmQ2yXWP4CZsbLjmc9fgYX80/edit#gid=862782551
+table_name,column_name,display_name,name_description,multiple_terms,term,display_term,term_description
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,DFW/North TX,DFW/North TX,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,Houston,Houston,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,El Paso,El Paso/West TX,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,San Antonio,San Antonio,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,Austin/Central TX,Austin/Central TX,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,RGV,Rio Grande Valley,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,Coastal Bend & Laredo,Coastal Bend & Laredo,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,Great Plains,Great Plains,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,Statewide & Other,Statewide & Other,
+Organizations,Custom_Region,Region,"Headquarters for the organization (see ""Regions Served"" for program service areas).",No,National,National,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,1,Region 1 – Edinburg,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,2,Region 2 – Corpus Christi,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,3,Region 3 – Victoria,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,4,Region 4 – Houston,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,5,Region 5 – Beaumont,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,6,Region 6 – Huntsville,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,7,Region 7 – Kilgore,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,8,Region 8 – Mount Pleasant,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,9,Region 9 – Wichita Falls,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,10,Region 10 – Richardson,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,11,Region 11 – Fort Worth,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,12,Region 12 – Waco,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,13,Region 13 – Austin,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,14,Region 14 – Abilene,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,15,Region 15 – San Angelo,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,16,Region 16 - Amarillo,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,17,Region 17 – Lubbock,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,18,Region 18 – Midland,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,19,Region 19 – El Paso,
+Organizations,Education_Service_Center,ESC Headquarters,Education Service Centerin which the organization is headquartered.,No,20,Region 20 – San Antonio,
+Organizations,Sector,Sector,Organizational structure or sector.,No,Business,Business,
+Organizations,Sector,Sector,Organizational structure or sector.,No,"Government (City, County, State, Federal, Etc.)",Government,
+Organizations,Sector,Sector,Organizational structure or sector.,No,Higher Education Institution,Higher Ed,
+Organizations,Sector,Sector,Organizational structure or sector.,No,K-12 School/District,K-12 Schools,
+Organizations,Sector,Sector,Organizational structure or sector.,No,Non-profit,Non-profit,
+Organizations,Sector,Sector,Organizational structure or sector.,No,Other,Other,
+Organizations,Service_Area,Service Area,Geographic scope of services.,No,Local (City/Town),Local,
+Organizations,Service_Area,Service Area,Geographic scope of services.,No,Regional/Multi-county,Regional,
+Organizations,Service_Area,Service Area,Geographic scope of services.,No,State,State,
+Organizations,Service_Area,Service Area,Geographic scope of services.,No,National,National,
+Organizations,Service_Area,Service Area,Geographic scope of services.,No,International,International,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Business,Business,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Consultant,Consultant,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Foundation,Foundation,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Government,Government,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Higher Education,Higher Ed,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Network/Association,Associations,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,School District/Campus,K-12 Schools,
+Organizations,Stakeholder_Category,Stakeholder Type,Individual or organizational category.,No,Service Provider,Service Provider,
+Organizations,Volunteers,Volunteers,Reliance on volunteers.,No,Yes,Yes,
+Organizations,Volunteers,Volunteers,Reliance on volunteers.,No,No,No,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Children in Nature,Children in Nature,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Climate Education,Climate Education,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Conservation,Conservation,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Education for Sustainability,Education for Sustainability,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Environmental Education,Environmental Education,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Environmental Justice,Environmental Justice,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Environmental Literacy,Environmental Literacy,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Green Schools,Green Schools,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Health & Wellness,Health & Wellness,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Outdoor Education,Outdoor Education,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Social Justice,Social Justice,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,STEM Education,STEM Education,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Youth Development,Youth Development,
+Organizations,Work_Terms,Terms Used to Describe Work,Preferred terminology for work.,Yes,Other,Other,
+Programs,Academic_Standards_Alignment,Standards Aligned,Program content aligns to academic standards.,No,Never asked question,N/A,
+Programs,Academic_Standards_Alignment,Standards Aligned,Program content aligns to academic standards.,No,No (skip the next question),No,
+Programs,Academic_Standards_Alignment,Standards Aligned,Program content aligns to academic standards.,No,Yes (please list them below),Yes,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Air Quality,Air Quality,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Conservation (Wildlife/Habitat),Conservation,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Energy,Energy,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Food Systems/Nutrition,Food/Nutrition,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Green Building,Green Building,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Outdoor Learning,Outdoor Learning,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,STEM,STEM,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Transportation,Transportation,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Waste,Waste,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Water,Water,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Workforce Development,Workforce Dev,
+Programs,Environmental_Themes,Environmental Themes,Programmatic focus areas.,Yes,Other,Other,
+Programs,Groups_Served,Groups Served,Youth and adults served by programs.,Yes,Community/Family,Community,The community and/or families.
+Programs,Groups_Served,Groups Served,Youth and adults served by programs.,Yes,Elementary School <K-5>,Elementary,Students from kindergarden to 5th grade.
+Programs,Groups_Served,Groups Served,Youth and adults served by programs.,Yes,High School <9-12>,High School,Students from 9th to 12th grade.
+Programs,Groups_Served,Groups Served,Youth and adults served by programs.,Yes,Middle School <6-8>,Middle School,Students from 6th to 8th grade.
+Programs,Groups_Served,Groups Served,Youth and adults served by programs.,Yes,Teachers/Administrators,Teachers/Admin,School teachers and/or administrators.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Do Not Evaluate,No Evaluation,The program is not evaluated.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,External Evaluation Partner,External Evaluation,The program has an external evaluation partner.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Post-Program Survey Only,Post-Program Survey,The program uses a post-program survey only. 
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Pre/Post-Program Survey,Pre/Post-Program Survey,The program uses pre and post-program surveys.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,"Qualitative/Informal (Focus Groups, Interviews, Testimonies)",Qualitative/Informal,"The program uses qualitative or informal evaluation such as focus groups, interviews, and testimonies."
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Rubrics for Student Projects/Presentations,Student Projects,The program uses evaluation rubrics for student projects.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Never asked question,N/A,This question was not asked about the program.
+Programs,Impact_Evaluation,Evaluation,Program evalution methods.,Yes,Other,Other,The program uses a different evaluation method.
+Programs,Program_Locations,Location,Location of program and offerings.,Yes,On School Campus,On School Campus,
+Programs,Program_Locations,Location,Location of program and offerings.,Yes,Off campus,Off Campus,
+Programs,Program_Locations,Location,Location of program and offerings.,Yes,Virtual,Virtual,
+Programs,Program_Locations,Location,Location of program and offerings.,Yes,Other,Other,
+Programs,Program_Times,Time,Time of day/year that program takes place.,Yes,After School &/or Evenings,After School,Occuring after school or weekday evenings.
+Programs,Program_Times,Time,Time of day/year that program takes place.,Yes,During School Day,During School,Occuring during the school day.
+Programs,Program_Times,Time,Time of day/year that program takes place.,Yes,Summer,Summer,Occuring during the summer break.
+Programs,Program_Times,Time,Time of day/year that program takes place.,Yes,Weekends,Weekends,Occuring on weekends.
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,All Regions,All Regions,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 1 – Edinburg,Region 1 – Edinburg,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 2 – Corpus Christi,Region 2 – Corpus Christi,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 3 – Victoria,Region 3 – Victoria,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 4 – Houston,Region 4 – Houston,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 5 – Beaumont,Region 5 – Beaumont,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 6 – Huntsville,Region 6 – Huntsville,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 7 – Kilgore,Region 7 – Kilgore,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 8 – Mount Pleasant,Region 8 – Mount Pleasant,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 9 – Wichita Falls,Region 9 – Wichita Falls,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 10 – Richardson,Region 10 – Richardson,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 11 – Fort Worth,Region 11 – Fort Worth,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 12 – Waco,Region 12 – Waco,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 13 – Austin,Region 13 – Austin,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 14 – Abilene,Region 14 – Abilene,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 15 – San Angelo,Region 15 – San Angelo,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 16 - Amarillo,Region 16 - Amarillo,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 17 – Lubbock,Region 17 – Lubbock,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 18 – Midland,Region 18 – Midland,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 19 – El Paso,Region 19 – El Paso,
+Programs,Regions_Served,ESC Region Availability,Availability of offerings in Education Service Centers.,Yes,Region 20 – San Antonio,Region 20 – San Antonio,
+Programs,Rural_Communities_Focus,Rural Focus,Services available to rural communities.,No,Yes,Yes,
+Programs,Rural_Communities_Focus,Rural Focus,Services available to rural communities.,No,No,No,
+Programs,Rural_Communities_Focus,Rural Focus,Services available to rural communities.,No,"No, but it is available to rural communities",Available,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Classroom Volunteers/Presenters,Classroom Presenters,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Curriculum & Instructional Materials,Instructional Materials,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Directly Teaching Students,Direct Teaching,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Field Trips,Field Trips,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Grant Funding,Grant Funding,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Internships,Internships,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Professional Development for Teachers,Teachers Training,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Professional Development or Consulting for Administrators,Administrator Training,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Supporting Networks (Online/In-Person),Supporting Networks,
+Programs,Services_&_Resources,Offerings,"Programs, resources and opportunities offered.",Yes,Other,Other,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Daily,Daily,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Multiple times a month,Multiple times a month,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Multiple times a week,Multiple times a week,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Not applicable,Not applicable,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Once a month,Once a month,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Once a week,Once a week,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Once a year,Once a year,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Quarterly,Quarterly,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Twice a year,Twice a year,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Varies,Varies,
+Programs,Student_Engagement_Frequency,Student Engagement,Frequency of student engagement.,No,Other,Other,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Daily,Daily,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Multiple times a month,Multiple times a month,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Multiple times a week,Multiple times a week,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Not applicable,Not applicable,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Once a month,Once a month,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Once a week,Once a week,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Once a year,Once a year,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Quarterly,Quarterly,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Twice a year,Twice a year,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Varies,Varies,
+Programs,Teacher/Administrator_Engagement_Frequency,Teacher/Admin Engagement,Frequency of teacher and administrator engagement.,No,Other,Other,
+Programs,Title_I_School_Participants,% Title 1,Total percentage of students from Title 1 schools served last year.,No,0-25%,0-25%,
+Programs,Title_I_School_Participants,% Title 1,Total percentage of students from Title 1 schools served last year.,No,26-50%,26-50%,
+Programs,Title_I_School_Participants,% Title 1,Total percentage of students from Title 1 schools served last year.,No,51-75%,51-75%,
+Programs,Title_I_School_Participants,% Title 1,Total percentage of students from Title 1 schools served last year.,No,76-100%,76-100%,
+Programs,Title_I_School_Participants,% Title 1,Total percentage of students from Title 1 schools served last year.,No,Do not track,Do not track,
+Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,Program focus on students from Title 1 and low-socioeconomic backgrounds.,No,"Yes, this is our core beneficiary and strategic priority.",Yes,
+Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,Program focus on students from Title 1 and low-socioeconomic backgrounds.,No,"No, this is not a focus in our outreach or programming.",No,
+Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,Program focus on students from Title 1 and low-socioeconomic backgrounds.,No,"This is not our core focus, but we serve a diverse spectrum of schools &/or students.","No, but we serve these areas.",
+Programs,Title_I_Schools_&_Low_Socioeconomic_Background_Focus,Title 1 Focus,Program focus on students from Title 1 and low-socioeconomic backgrounds.,No,We do not track Title I and/or low socioeconomic status students.,Do not track,
