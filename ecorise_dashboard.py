@@ -58,6 +58,15 @@ programs['orgID'] = programs['orgID'].astype('Int64')
 controlled_terms_df = pd.read_csv(os.path.join(data_filepath, 'data', 'filter_dict.csv'))
 
 
+def multiterm_columns(controlled_terms, table_name):
+    to_explode = controlled_terms.loc[
+        (controlled_terms['table_name'] == table_name)
+        & (controlled_terms['multiple_terms'] == "Yes"),
+        'column_name'
+    ].unique()
+    return list(to_explode)
+
+
 def get_display_terms(controlled_terms_df, table, column):
     """
     Produce dataframe with: term, display_term
@@ -84,7 +93,7 @@ def count_env_themes_for_programs(programs_df):
     ## Get program names and environmental themes
     program_themes_df = programs_df.loc[:, ['Program','Environmental_Themes']]
     ## Split environmental themes from string into an array of strings on ", "
-    program_themes_df['Environmental_Themes'] = program_themes_df['Environmental_Themes'].str.split(', ')
+    # program_themes_df['Environmental_Themes'] = program_themes_df['Environmental_Themes'].str.split(', ')
     ## Explode dataframe by environmental theme to get each theme from within an array into a row
     program_themes_df = program_themes_df.explode('Environmental_Themes')
     ## Group by environmental theme counting the number of programs with each theme
@@ -522,16 +531,28 @@ def dd_values(input_piechart, *vals):
 
     # select only programs in the filtered org list, then filter on program filters
     df_p = programs[programs['orgID'].isin(df_o['orgID'])]
-    # TODO: Make sure this is exploded.
-    p_msg = 'programs: '
+
+    multiterm_prog_columns = multiterm_columns(controlled_terms_df, "Programs")
+    # Turn multiterm strings into lists
+    for col in multiterm_prog_columns:
+        df_p[col] = df_p[col].str.split(', ')
+
     for col_name, selected_terms in input_prog_col_to_selected.items():
         if selected_terms:
-            df_p = df_p.loc[df_p[col_name].isin(selected_terms)]
+            # Drop rows where the select column is empty, because it means
+            # it won't match any filtered value anyway.
+            df_p = df_p.dropna(subset=[col_name])
+            if col_name in multiterm_prog_columns:
+                selected_set = set(selected_terms)
+                is_overlapping = df_p[col_name].apply(lambda x: bool(set(x) & selected_set))
+                df_p = df_p.loc[is_overlapping]
+            else:
+                df_p = df_p.loc[df_p[col_name].isin(selected_terms)]
 
     # Count the number of non-null Program filters
     p_count = len([selected_terms for selected_terms
                    in input_prog_col_to_selected.values() if selected_terms])
-
+    app.logger.debug("Applying {} program filters.".format(p_count))
     # if any program filter is selected, filter orgs to this
     if p_count > 0:
         df_o = df_o[df_o['orgID'].isin(df_p['orgID'])]
@@ -539,6 +560,7 @@ def dd_values(input_piechart, *vals):
     # calculate Org message
     org_count = len(df_o)
     pg_count = len(df_p)
+    app.logger.debug("Found {} orgs and {} programs".format(org_count, pg_count))
     orgs_msg = 'Organization Records (' + str(org_count) + ')'
     pg_msg = 'Program Records (' + str(pg_count) + ')'
 
