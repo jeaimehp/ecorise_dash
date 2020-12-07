@@ -543,7 +543,7 @@ app.layout = html.Div([sidebar, content])
 def dd_values(input_piechart, input_barchart, *vals):
     # Split org and prog selected values
     input_org_values = vals[:len(ORG_FILTER_LIST)]
-    input_prog_values = vals[len(PROG_FILTER_LIST):]
+    input_prog_values = vals[len(ORG_FILTER_LIST):]
 
     # Build mapping from col_name -> list of selected values
     input_org_col_to_selected = {
